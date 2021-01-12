@@ -1,0 +1,594 @@
+@import "./font.css";
+@import "./bootstrap.min.css";
+body {
+    font-family: 'Circular Std' !important;
+    background-color: #f5f5f5 !important;
+}
+
+ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+ul li {
+    list-style: none !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+.body active{
+     border-bottom: 2px solid #1f1f70 !important;
+}
+
+::placeholder {
+    color: #000000;
+    opacity: 1;
+    text-transform: capitalize;
+}
+
+.p-relative {
+    position: relative;
+}
+
+
+/* Header css strat */
+
+.header {
+    background-color: #ffffff;
+}
+
+.nav li {
+    display: inline-block;
+    font-size: 16px;
+    padding: 0 20px;
+}
+
+.nav li a {
+    color: #1F1F70;
+    transition: all 0.4s;
+    height: 85px;
+    line-height: 85px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid transparent;
+}
+
+.nav li:hover a {
+    border-bottom: 2px solid #1f1f70;
+}
+
+/*.nav li.active a {*/
+/*    border-bottom: 2px solid #1f1f70 !important;*/
+/*}*/
+
+.nav li a img {
+    vertical-align: text-top;
+}
+
+.nav-2 li {
+    display: inline-block;
+}
+
+.user-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #1F1F70;
+    padding: 2px;
+}
+
+.notification-box {
+    padding: 0 11px !important;
+    display: flex !important;
+    align-items: center;
+}
+
+.notification-box span.user-img {
+    background: #1f1f70;
+    color: #fff;
+    max-width: 60px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.dropdown-menu.right-side {
+    top: 100% !important;
+    transform: translate3d(-85%, 24px, 0px) !important;
+    transition: height 0.3s ease-in;
+}
+
+.dropdown-menu.left-side {
+    top: 75% !important;
+    transform: translate3d(-30%, 24px, 0px) !important;
+    transition: height 0.3s ease-in;
+}
+
+.dropdown-menu.ntfn {
+    padding: 0px;
+    min-width: 400px;
+    text-align: left;
+}
+
+.dropdown-menu.ntfn .bg {
+    background-color: #1f1f70;
+    padding: 10px 10px 0px 10px;
+    color: white;
+}
+
+.dropdown-menu.show::after {
+    content: "";
+    position: absolute;
+    top: -12px;
+    right: 10%;
+    width: 0px;
+    height: 0px;
+    border-left: 12px solid #1f1f7000;
+    border-right: 12px solid #1f1f7000;
+    border-bottom: 12px solid #1f1f70;
+}
+
+.profile-logo a {
+    display: flex;
+}
+
+
+/* Header css end */
+
+form input {
+    width: 100% !important;
+    height: 50px !important;
+    padding: 12px 30px !important;
+    margin: 0 !important;
+    font-size: 16px !important;
+    border: 1px solid rgb(0 0 0 / 0.1) !important;
+}
+
+
+/* Dashboard css start */
+
+.box {
+    width: 100%;
+    height: 200px;
+    background-color: #CCE4FF;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.box .img-left {
+    position: absolute;
+    top: 35px;
+    left: 40px;
+}
+
+.box .img-right {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dashboard table {
+    border: none !important;
+}
+
+.dashboard table .table th,
+.table td {
+    vertical-align: inherit !important;
+}
+
+.dashboard table tbody tr td .user-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.dashboard table tbody tr td .user-img h3 {
+    font-size: 22px;
+    margin: 0;
+}
+
+.dashboard table tbody tr td div span {
+    font-size: 13px;
+}
+
+.dashboard table tbody tr td .online-games .dort {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.dashboard tbody tr:nth-child(4n+1) .user-img,
+.dashboard table tbody tr:nth-child(4n+1) .online-games .dort {
+    background-color: #9D3FEB;
+}
+
+.dashboard table tbody tr:nth-child(4n+2) .user-img,
+.dashboard table tbody tr:nth-child(4n+2) .online-games .dort {
+    background-color: #FF852F;
+}
+
+.dashboard table tbody tr:nth-child(4n+3) .user-img,
+.dashboard table tbody tr:nth-child(4n+3) .online-games .dort {
+    background-color: #2347F7;
+}
+
+.dashboard table tbody tr:nth-child(4n+4) .user-img,
+.dashboard table tbody tr:nth-child(4n+4) .online-games .dort {
+    background-color: #BEE647;
+}
+
+.dashboard table tbody tr td .user-name {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 0;
+    line-height: normal;
+}
+
+.dashboard table tbody tr .online-games {
+    width: max-content;
+    padding: 3px 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.dashboard table tbody tr:nth-child(4n+1) .online-games {
+    background-color: rgba(157, 63, 235, 10%);
+}
+
+.dashboard table tbody tr:nth-child(4n+2) .online-games {
+    background-color: rgba(255, 133, 47, 10%);
+}
+
+.dashboard table tbody tr:nth-child(4n+3) .online-games {
+    background-color: rgba(35, 71, 247, 10%);
+}
+
+.dashboard table tbody tr:nth-child(4n+4) .online-games {
+    background-color: rgba(190, 230, 71, 10%);
+}
+.minus {
+    font-size: 20px;
+    color: red;
+}
+.plas {
+    font-size: 20px;
+    color: #079E02;
+}
+/* Dashboard css end */
+
+
+/* Customer css start */
+
+.customer-bg {
+    width: 100%;
+    min-height: calc(100vh - 115px);
+    background-color: #f5f5f5;
+}
+
+.customer-bg table.dataTable {
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 30px !important;
+}
+
+.customer-bg table tr td a {
+    color: black;
+}
+
+.customer-bg table.dataTable th {
+    border: none;
+    background-color: #f5f5f5;
+    padding: 15px 0;
+    font-size: 20px;
+}
+
+.customer-bg table.dataTable td {
+    border-bottom: 1px solid rgba(0, 0, 0, 10%);
+    padding: 10px 0;
+}
+
+.cstm-heading {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cstm-button {
+    width: 200px !important;
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #1F1F70;
+    color: #ffffff !important;
+    text-transform: capitalize;
+    transition: all 0.4s;
+    border: 2px solid transparent !important;
+}
+
+.cstm-button:hover {}
+
+.cstm-button a {
+    color: #ffffff;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.box-padding {
+    padding: 30px;
+}
+
+.name-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #9D3FEB;
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.name-icon>h3 {
+    margin: 0;
+}
+
+.user-name {
+    font-size: 20px;
+    margin: 0;
+    text-transform: capitalize;
+    line-height: normal;
+}
+
+.user-no {
+    color: #4D4D57;
+    margin: 0;
+}
+
+.f-color {
+    color: #2E6B00;
+    font-size: 18px;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.box-padding table thead,
+.box-padding table tbody {
+    padding: 20px;
+}
+
+.box-padding table thead th {
+    background-color: #f5f5f5;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.box-padding table tbody td {
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(157, 63, 235, 0.1);
+}
+
+.you-gave {
+    color: #FF0000;
+}
+
+.you-got {
+    color: #2E6B00;
+}
+
+ul.gave-got-button {
+    margin-top: 20px !important;
+    text-align: right;
+}
+
+ul.gave-got-button li {
+    display: inline-block;
+}
+
+ul.gave-got-button li button {
+    border: 2px solid #1F1F70;
+    color: #1F1F70;
+    transition: all 0.4s;
+    width: 140px;
+    height: 50px;
+}
+
+ul.gave-got-button li button:hover {
+    background-color: #1F1F70;
+    color: #ffffff;
+}
+
+ul.gave-got-button li:first-child button {
+    background-color: #1F1F70;
+    color: #ffffff;
+    margin-right: 25px;
+}
+
+ul.gave-got-button li:first-child button:hover {
+    background-color: #ffffff;
+    color: #1F1F70;
+}
+
+.pop-submit-button {
+    width: 150px !important;
+    margin-top: 20px !important;
+    background-color: #1F1F70;
+    color: #fff;
+    border: 2px solid #1F1F70 !important;
+    transition: all 0.4s;
+}
+
+.pop-submit-button:hover {
+    background-color: #fff;
+    color: #1F1F70;
+}
+
+.modal-body label {
+    color: rgba(0, 0, 0, 65%);
+    margin-bottom: 2px;
+}
+
+.modal-body input {
+    margin-bottom: 15px !important;
+}
+
+.modal-title {
+    text-transform: capitalize;
+}
+
+.modal-body input.redio-input {
+    height: 30px !important;
+    max-width: 18px;
+    margin: 0 !important;
+    margin-right: 6px !important;
+}
+
+.label-m {
+    margin: 0 !important;
+    margin-right: 15px !important;
+}
+
+
+/* Customer css end */
+
+
+/* My Account css start */
+
+.my-heading {
+    padding: 30px 0;
+}
+
+.bg-color {
+    width: 100%;
+    min-height: calc(100vh - 85px);
+    background-color: #f5f5f5;
+}
+
+.my-profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+.b-bottom {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid rgba(157, 63, 235, 10%);
+}
+
+.top-title {
+    font-size: 25px;
+    color: rgba(0, 0, 0, 65%);
+}
+
+.bottom-title {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 65%);
+}
+
+.b-bottom p {
+    margin: 0;
+}
+
+.my-account label {
+    margin-bottom: 5px;
+    color: rgba(0, 0, 0, 65%);
+}
+
+.my-account label.op-100 {
+    color: rgba(0, 0, 0, 100%);
+}
+
+.my-account input {
+    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+    padding: 5px 15px !important;
+    color: rgba(0, 0, 0, 65%);
+}
+
+.my-account .left-input {
+    width: 100%;
+    padding-right: 10px;
+}
+
+.my-account .right-input {
+    width: 100%;
+    padding-left: 10px;
+}
+.my-profile-icon {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.my-profile .p-relative .edit-icon {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.my-profile-choose-file {
+    opacity: 0;
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0 !important;
+    border-radius: 50%;
+}
+
+.my-profile-edit-img {
+    position: absolute;
+    bottom: 15px;
+    right: 0px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 6px 22px 2px #00000059;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.preview {
+    border: 3px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0px 6px 22px 2px #00000059;
+    width: 170px;
+    height: 170px;
+}
+
+.user-pro-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.my-acc-chekbox {
+    width: 15px !important;
+    height: 14px !important;
+    margin: 0 !important;
+}
+
+
+/* My Account css end */
